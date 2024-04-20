@@ -57,20 +57,19 @@ a:link, a, a:visited{
     color:#a71531;
 }
 #container{
-    display: flex;
     width: calc(100% - 75px);
     padding: 25px;
     gap: 25px;
+    margin-top: 30px;
 }
 #container main{
-    flex-basis: 70%;
     font-size:20px;
 }
 .bold{
     font-size:30px;
     font-weight: bolder;
 }
-#container ul{
+#container details{
     flex-basis: 30%;
     font-family: "Laila", serif;
     list-style: none;
@@ -79,7 +78,6 @@ a:link, a, a:visited{
 }
 
 #container main{
-    height: calc(100vh - 50px);
     overflow:scroll;
 }
 
@@ -87,7 +85,21 @@ ul li{
     border-bottom:none;
     padding:5px;
 }
-ul li:last-child{
+details{
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: whitesmoke;
+    border-bottom:1px solid;
+    padding: 10px 25px;
+    width: 100%;
+
+}
+details summary{
+    cursor: pointer;
+    padding-left:25px;
+    list-style: none;
+
 }
 
 @media(max-width: 768px){
@@ -95,6 +107,12 @@ ul li:last-child{
         flex-direction: column;
         width: calc(100% - 20px);
         padding:10px;
+    }
+    details{
+        padding: 10px;
+    }
+    details summary{
+        padding-left: 10px;
     }
     #container main{
         height: auto;
