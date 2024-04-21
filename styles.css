@@ -99,8 +99,12 @@ details summary{
     cursor: pointer;
     padding-left:25px;
     list-style: none;
+    list-style-type: none;
 
 }
+summary::-webkit-details-marker {
+    display: none; /* Chrome */
+  }
 details summary::after{
     content:" + ";
     margin-left:5px;
