@@ -7,6 +7,9 @@ body{
     font-optical-sizing: auto;
     color: black;
 }
+a:hover{
+    color: crimson;
+}
 .laila-light {
     font-family: "Laila", serif;
     font-weight: 300;
