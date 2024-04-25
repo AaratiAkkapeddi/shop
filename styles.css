@@ -78,6 +78,10 @@ a:link, a, a:visited{
     margin-left:0;
     padding-left:0;
 }
+details {
+    overflow: scroll;
+    max-height: 100vh;
+}
 
 #container main{
     overflow:scroll;
